@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# bozze e originali delle immagini (restano sul computer)
+tools/immagini/lavoro/
+
+# note di lavoro che restano sul computer
+docs/locale/
+
+# appunti interni e strumenti di lavoro: restano sul computer e non si pubblicano (decisione del 10/11/2026)
+*.md
+docs/
+tools/
