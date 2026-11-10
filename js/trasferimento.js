@@ -215,7 +215,11 @@
 
   function disegnaNuovo(box) {
     box.appendChild(el('h3', null, 'Importa i tuoi dati'));
-    box.appendChild(el('p', null, 'Hai già usato Sakina all’indirizzo ' + INDIRIZZO_VECCHIO + '? Lì, in «Su Sakina», scegli «Apri il nuovo indirizzo con i miei dati». Oppure importa qui il file che hai salvato.'));
+    var intro = el('p', null, 'Hai già usato Sakina alla versione precedente? ');
+    var vec = el('a', null, 'Aprila qui'); vec.href = 'https://' + INDIRIZZO_VECCHIO + '/';
+    intro.appendChild(vec);
+    intro.appendChild(document.createTextNode(': in «Su Sakina» scegli «Apri il nuovo indirizzo con i miei dati». Oppure importa qui il file che hai salvato.'));
+    box.appendChild(intro);
     var az = el('div', 'sheet-actions');
     var b = el('button', 'btn secondary', 'Importa da un file'); b.type = 'button';
     var inp = el('input'); inp.type = 'file'; inp.accept = '.json,application/json'; inp.hidden = true; inp.id = 'trasf-file';
@@ -235,6 +239,8 @@
     if (card) {
       var p = el('p', 'hint'), bh = el('button', 'btn secondary piccolo', 'Ho già dei dati: importa da un file'); bh.type = 'button';
       p.appendChild(bh); card.appendChild(p);
+      var pv = el('p', 'hint'), av = el('a', null, 'Apri la versione precedente di Sakina'); av.href = 'https://' + INDIRIZZO_VECCHIO + '/';
+      pv.appendChild(av); card.appendChild(pv);
       bh.addEventListener('click', function () { if (S.closeDialog) S.closeDialog(); inp.value = ''; inp.click(); });
     }
   }
