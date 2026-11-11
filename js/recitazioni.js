@@ -1,5 +1,5 @@
 /* Sakina – lettore e interfaccia delle recitazioni coraniche (tradizione Hafs).
-   Streaming immediato delle 114 Sure con 5 voci (alcune con una selezione ristretta di Sure),
+   Streaming immediato delle 114 Sure con 10 voci (alcune con una selezione ristretta di Sure),
    salvataggio selettivo offline nella Cache del browser e sottofondo leggero di natura
    (pioggia, onde, vento, ruscello) dal motore di js/audio.js. */
 (function () {
@@ -15,7 +15,7 @@
   /* Due elementi audio. Quello «con livelli» passa dal motore audio (js/audio.js), che applica un guadagno
      per voce e per Sura (js/recitazioni_livelli.js) e un limitatore: porta tutte le registrazioni allo stesso livello.
      Quello «semplice» è un normale <audio>, usato se i livelli sono spenti o se il percorso con livelli non funziona. */
-  var RECITERS = ['minshawi', 'basit', 'hussary', 'salimi', 'afasy'].filter(function (id) { return !!D.reciters[id]; });
+  var RECITERS = ['minshawi', 'basit', 'hussary', 'salimi', 'afasy', 'dosari', 'dukhain', 'kurdi', 'dibirov', 'nufais'].filter(function (id) { return !!D.reciters[id]; });
   var elPlain = new Audio();
   elPlain.preload = 'none';
   var elRouted = new Audio();

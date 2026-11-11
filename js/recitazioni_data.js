@@ -1,6 +1,6 @@
-/* Sakina – Dati recitazioni coraniche: 114 Sure, 3 maestri egiziani storici (Hafs Mujawwad) e 2 voci più recenti.
-   Campo opzionale «surahs» di un recitatore: se c'è, SOLO quelle Sure sono disponibili con quella voce (oggi nessuna voce lo usa:
-   fino al 9 novembre 2026 Afasy aveva 11 Sure). Le Sure assenti non compaiono in elenco, ricerca, precedente/successiva né a fine Sura.
+/* Sakina – Dati recitazioni coraniche: 114 Sure, 3 maestri egiziani storici (Hafs Mujawwad) e 7 voci più recenti.
+   Campo opzionale «surahs» di un recitatore: se c'è, SOLO quelle Sure sono disponibili con quella voce (oggi lo usa Dibirov,
+   che su MP3Quran ha 24 Sure; fino al 9 novembre 2026 Afasy ne aveva 11). Le Sure assenti non compaiono in elenco, ricerca, precedente/successiva né a fine Sura.
    Campi «cons» (numeri di Sura) e «note» (testo per numero): consigliate per il riposo solo con quella voce. */
 window.Sakina = window.Sakina || {};
 window.Sakina.QuranData = {
@@ -54,6 +54,52 @@ window.Sakina.QuranData = {
     "stile": "Hafs",
     "desc": "Voce chiara e luminosa, per l'ascolto di ogni giorno.",
     "baseUrl": "https://cdn.mp3quran.net/audio/mishary-alafasy/r1/"
+  },
+  "dosari": {
+    "id": "dosari",
+    "nome": "Yasser Al-Dosari",
+    "arabo": "ياسر الدوسري",
+    "corto": "Al-Dosari",
+    "stile": "Hafs (Murattal)",
+    "desc": "Recitatore saudita, imam della Grande Moschea della Mecca. Tutte le 114 Sure.",
+    "baseUrl": "https://cdn.mp3quran.net/audio/yasser-dosari/r1/"
+  },
+  "dukhain": {
+    "id": "dukhain",
+    "nome": "Haitham Al-Dukhain",
+    "arabo": "هيثم الدخين",
+    "corto": "Al-Dukhain",
+    "stile": "Hafs",
+    "desc": "Recitatore saudita. Tutte le 114 Sure.",
+    "baseUrl": "https://cdn.mp3quran.net/audio/haitham-dukhain/r1/"
+  },
+  "kurdi": {
+    "id": "kurdi",
+    "nome": "Raad Mohammad Al-Kurdi",
+    "arabo": "رعد محمد الكردي",
+    "corto": "Al-Kurdi",
+    "stile": "Hafs (Murattal)",
+    "desc": "Recitatore curdo iracheno. Tutte le 114 Sure.",
+    "baseUrl": "https://cdn.mp3quran.net/audio/raad-kurdi/r1/"
+  },
+  "dibirov": {
+    "id": "dibirov",
+    "nome": "Muhammad Dibirov",
+    "arabo": "محمد ديبيروف",
+    "corto": "Dibirov",
+    "stile": "Hafs (Murattal)",
+    "desc": "Recitatore del Daghestan. Per ora MP3Quran ha 24 Sure con la sua voce: in elenco compaiono solo quelle.",
+    "baseUrl": "https://cdn.mp3quran.net/audio/muhammad-dibirov/r1/",
+    "surahs": [2, 12, 13, 17, 18, 19, 20, 24, 26, 27, 31, 32, 36, 37, 41, 44, 53, 55, 56, 67, 70, 72, 76, 79]
+  },
+  "nufais": {
+    "id": "nufais",
+    "nome": "Ahmad Al-Nufais",
+    "arabo": "أحمد النفيس",
+    "corto": "Al-Nufais",
+    "stile": "Hafs (Murattal)",
+    "desc": "Recitatore kuwaitiano. Tutte le 114 Sure.",
+    "baseUrl": "https://cdn.mp3quran.net/audio/ahmad-nufais/r1/"
   }
 },
   surahs: [

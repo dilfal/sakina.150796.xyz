@@ -1,7 +1,7 @@
 {
   "name": "Sakina – recitazioni coraniche per la quiete",
   "short_name": "Sakina",
-  "description": "Le 114 Sure in cinque voci, con sottofondo di natura, timer di spegnimento e ascolto senza rete.",
+  "description": "Le 114 Sure in dieci voci, con sottofondo di natura, timer di spegnimento e ascolto senza rete.",
   "lang": "it",
   "start_url": "./index.html",
   "scope": "./",
