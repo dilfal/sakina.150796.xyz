@@ -1,11 +1,13 @@
 /* Sakina – service worker: tiene l’app e i suoni di sottofondo in memoria per usarla senza rete.
    Sullo stesso indirizzo (github.io) vivono anche altre app (Bonaccia): qui si toccano solo le memorie che iniziano per «sakina-». */
-var CACHE = 'sakina-v16';
+var CACHE = 'sakina-v17';
 var QURAN_CACHE = 'sakina-recitazioni-v1';
 var FILES = [
   './', 'index.html', 'manifest.webmanifest',
   'css/style.css', 'js/version.js', 'js/audio.js', 'js/recitazioni_data.js', 'js/sure_info.js', 'js/recitazioni_livelli.js', 'js/recitazioni.js', 'js/app.js', 'js/trasferimento.js',
-  'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png'
+  'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png',
+  'img/recitatori/basit.webp', 'img/recitatori/minshawi.webp', 'img/recitatori/hussary.webp', 'img/recitatori/salimi.webp', 'img/recitatori/afasy.webp',
+  'img/recitatori/dosari.webp', 'img/recitatori/dukhain.webp', 'img/recitatori/kurdi.webp', 'img/recitatori/dibirov.webp', 'img/recitatori/nufais.webp'
 ];
 var NATURA = ['pioggia', 'mare', 'fiume'].map(function (n) { return 'audio/natura/natura_' + n + '.mp3'; });
 

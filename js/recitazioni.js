@@ -790,7 +790,10 @@
       '<div class="q-reciter-chips" role="radiogroup" aria-label="Seleziona il recitatore">' +
         RECITERS.map(function (rid) {
           var r = D.reciters[rid];
-          return '<button type="button" class="chip' + (state.reciter === rid ? ' on' : '') + '" data-reciter="' + rid + '">' + (r.corto || r.nome) + '</button>';
+          return '<button type="button" class="chip' + (state.reciter === rid ? ' on' : '') + '" data-reciter="' + rid + '">' +
+            '<img class="q-reciter-avatar" src="img/recitatori/' + rid + '.webp" alt="" width="44" height="44" decoding="async">' +
+            '<span>' + (r.corto || r.nome) + '</span>' +
+          '</button>';
         }).join('') +
       '</div>' +
 
